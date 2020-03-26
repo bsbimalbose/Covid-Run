@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+.bottom-nav-wrapper > .am-tabs {
+  position: fixed;
+  bottom: 0px;
+  height: calc(100% - 50px);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.am-tabs-pane-wrap {
+  background: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-down {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+}
+
+.overview-tile {
+  display: flex;
+  flex-flow: column;
   align-items: center;
+  margin: 10px 10px 0 10px;
+}
+
+.overview-tile > .label {
+  color: #0b0c0c;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: -15px;
+}
+
+.overview-tile > .count {
+  color: #8561c5;
+  font-size: 80px;
+  line-height: normal;
+  font-weight: 600;
+}
+.am-tabs-default-bar-tab-active {
+  color: #8561c5;
+}
+.am-tabs-default-bar-underline {
+  border: 1px #8561c5 solid;
+}
+.page-wrap {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  background-color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+/* State View Page */
+
+table,
+th,
+td {
+  border-collapse: collapse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.state-view-table th {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  text-align: left;
+  /* background: #f0f0f0;
+  border-bottom: 1px solid #f0f0f0; */
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.state-view-table .td {
+  color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #f0f0f0;
+  padding: 5px 10px;
+}
+.state-view-table .td.not-first {
+  text-align: right;
+  padding: 5px 15px 5px 0px;
+}
+
+.state-view-table .td.not-first .row-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.region-header {
+  margin: 10px;
+}
+.region-bold {
+  font-size: 16px;
+  font-weight: 600;
+}
+.region-lite {
+  font-size: 12px;
+  font-weight: 400;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+
+/* Chart */
+
+.chart-name {
+  color: #0b0c0c;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.chart-wrap {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.each-chart-wrap {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 0%;
+  max-height: 350px;
+  max-width: 400px;
+}
+.about-wrap {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: #979797;
+}
+
+.badge-newRecovered .am-badge-text {
+  background: green;
+}
+.badge-newActive .am-badge-text {
+  background: #ff9800;
+}
+.badge-newDeaths .am-badge-text {
+  background: #f44336;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+.button-tab-wrap {
+  margin: 15px;
+}
+.w100{
+  width: 100%;
+}
+.mb-0{
+  margin-bottom: 0px;
 }
