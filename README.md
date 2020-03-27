@@ -1,8 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is live here: https://covidrun.netlify.com/
 
-## Available Scripts
+## COVID - 19 Detailed tracker for India
 
-In the project directory, you can run:
+Front end part for the Indian Covid 19 cases tracker, organizes the data in an easier to follow manner.
+
+PS: the website tracks only officially confirmed cases and doesnot track any unofficial news sources
 
 ### `npm start`
 
